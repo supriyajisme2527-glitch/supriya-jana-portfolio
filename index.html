@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Supriya Jana · Pharmacist | PGDM Marketing</title>
+  <meta name="description" content="Portfolio of Supriya Jana, a pharmacist pursuing a PGDM in Marketing at ISME. Market research, competitor analysis, data analytics and consumer insight.">
+  <meta name="theme-color" content="#F1F4EA">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Supriya Jana · Pharmacist | PGDM Marketing">
+  <meta property="og:description" content="Blending pharmaceutical knowledge with marketing strategy to analyse consumer behaviour and make data-driven decisions.">
+  <!-- Link preview picture (LinkedIn, WhatsApp, X). Most of these apps need the FULL address, so after you deploy,
+       change both image lines to e.g. https://your-site.netlify.app/images/share.jpg and add an og:url line with the site address. -->
+  <meta property="og:image" content="images/share.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Supriya Jana, pharmacist and PGDM Marketing student: portfolio">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="images/share.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon-48.png" type="image/png" sizes="48x48">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400..800;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="backdrop" aria-hidden="true"><i class="orb o1"></i><i class="orb o2"></i><i class="orb o3"></i><i class="orb o4"></i><i class="orb o5"></i></div>
+
+  <header class="nav" id="nav">
+    <div class="wrap nav-in">
+      <a class="brand" href="#home" aria-label="Supriya Jana, back to top">
+        <span class="monogram" aria-hidden="true">S<i>J</i></span>
+        <span class="brand-text"><b id="brand-name">Supriya Jana</b><small id="brand-sub"></small></span>
+      </a>
+      <nav class="nav-links" id="nav-links" aria-label="Sections">
+        <a href="#home" data-sec="home">Home</a>
+        <a href="#about" data-sec="about">About</a>
+        <span class="has-drop">
+          <a href="#projects" data-sec="projects" aria-haspopup="true">Projects <svg class="caret" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5L6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <ul class="drop" id="drop"></ul>
+        </span>
+        <a href="#experience" data-sec="experience">Internship</a>
+        <a href="#skills" data-sec="skills">Skills</a>
+        <a href="#tools" data-sec="tools">Tools</a>
+        <a href="#achievements" data-sec="achievements">Achievements</a>
+        <a href="#contact" data-sec="contact">Contact</a>
+      </nav>
+      <a class="btn solid cv-btn" id="nav-cv" href="#" data-cv></a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links"></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="wrap hero-grid" id="hero"></div>
+    </section>
+
+    <section class="sec about" id="about" aria-labelledby="about-title">
+      <div class="wrap about-grid" id="about-grid"></div>
+    </section>
+
+    <section class="band" id="skills" aria-labelledby="skills-title">
+      <div class="wrap band-stack">
+        <div class="band-grid" id="skills-band"></div>
+      </div>
+    </section>
+
+    <section class="sec" id="projects" aria-labelledby="projects-title">
+      <div class="wrap"><div class="pbase reveal" id="projects-wrap"></div></div>
+    </section>
+
+    <section class="sec">
+      <div class="wrap"><div class="gbase reveal"><div class="duo">
+        <div id="certs" aria-labelledby="certifications-title"></div>
+        <aside id="experience" aria-labelledby="experience-title"></aside>
+      </div></div></div>
+    </section>
+
+    <section class="sec" id="tools" aria-labelledby="tools-title">
+      <div class="wrap"><div class="gbase reveal" id="tools-wrap"></div></div>
+    </section>
+
+    <section class="sec" id="achievements" aria-labelledby="achievements-title">
+      <div class="wrap"><div class="gbase reveal" id="ach-wrap"></div></div>
+    </section>
+
+    <section class="sec sec-last" id="interests" aria-labelledby="interests-title">
+      <div class="wrap" id="int-wrap"></div>
+    </section>
+  </main>
+
+  <footer class="foot" id="contact"></footer>
+
+  <!-- Glass slide layer: projects, internships, all skills -->
+  <div class="layer" id="layer" hidden>
+    <div class="layer-scrim" id="layer-scrim"></div>
+    <div class="stack" id="stack">
+      <i class="ghost g2" aria-hidden="true"></i>
+      <i class="ghost g1" aria-hidden="true"></i>
+      <section class="slide" id="layer-sheet" role="dialog" aria-modal="true" aria-labelledby="layer-title" tabindex="-1">
+        <div class="slide-bar">
+          <span class="slide-tag" id="layer-tag"></span>
+          <button class="icon-btn" id="layer-close" aria-label="Close (Esc)"></button>
+        </div>
+        <div class="slide-body" id="layer-body"></div>
+      </section>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
