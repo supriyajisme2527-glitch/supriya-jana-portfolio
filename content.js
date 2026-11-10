@@ -766,6 +766,10 @@ window.SITE = {
   /* ----------------------------- CONTACT ----------------------------- */
   contact: {
     email: "supriyaj.isme2527@gmail.com",
+    /* What opens when a visitor clicks any email button: a formal message, already addressed to the email above.
+       Edit the two lines below to change the wording (\r\n means a new line). */
+    mailSubject: "Enquiry for Supriya Jana (from your portfolio website)",
+    mailBody: "Dear Supriya Jana,\r\n\r\nI am writing to you regarding: [role, opportunity or purpose]\r\n\r\n[Your message]\r\n\r\nThank you for your time. I look forward to your reply.\r\n\r\nKind regards,\r\n[Your name]\r\n[Your organisation and designation]\r\n[Your phone number]",
     linkedin: { handle: "linkedin.com/in/supriya-jana", url: "https://www.linkedin.com/in/supriya-jana" },
     youtube: { url: "https://www.youtube.com/@Supriyajana-b3j5e" }
   },

@@ -193,7 +193,7 @@
         '<p class="role rise" style="--d:2">' + esc(h.title) + '</p>' +
         '<p class="intro rise" style="--d:3">' + esc(h.intro) + '</p>' +
         '<ul class="features rise" style="--d:4">' + h.features.map(function (f) { return '<li class="tn-' + esc(f.tone || 'green') + '"><i class="f-ico">' + icon(f.icon) + '</i><span>' + esc(f.label) + '</span></li>'; }).join('') + '</ul>' +
-        '<div class="cta rise" style="--d:5"><a class="btn solid" href="#projects">View My Projects ' + icon('arrow') + '</a><a class="btn" href="mailto:' + esc(S.contact.email) + '">Let\'s Connect</a></div>' +
+        '<div class="cta rise" style="--d:5"><a class="btn solid" href="#projects">View My Projects ' + icon('arrow') + '</a><a class="btn" href="' + esc(mailHref()) + '">Let\'s Connect</a></div>' +
       '</div>' +
       '<div class="stage rise" style="--d:2">' +
         '<div class="pf">' +
@@ -213,7 +213,7 @@
         '<p>' + esc(a.text) + '</p>' +
         '<ul class="meta">' +
           '<li>' + icon('pin') + '<span>' + esc(a.location) + '</span></li>' +
-          '<li><a href="mailto:' + esc(S.contact.email) + '">' + icon('mail') + '<span>' + esc(S.contact.email) + '</span></a></li>' +
+          '<li><a href="' + esc(mailHref()) + '">' + icon('mail') + '<span>' + esc(S.contact.email) + '</span></a></li>' +
           '<li><a href="' + esc(S.contact.linkedin.url) + '" target="_blank" rel="noopener" title="Supriya Jana on LinkedIn">' + icon('linkedin') + '<span>LinkedIn</span></a></li>' +
         '</ul></div>' +
       '<article class="gcard journey reveal" style="--i:1"><h3>' + esc(j.title) + '</h3><ol class="tl">' +
@@ -310,6 +310,13 @@
       '<ul class="chips langs"><li class="lab">Languages</li>' + S.languages.map(function (t) { return '<li>' + esc(t) + '</li>'; }).join('') + '</ul></div>';
   }
 
+  /* The address every email button opens: the email in content.js with a formal subject and message already filled in. */
+  function mailHref() {
+    var c = S.contact, q = [];
+    if (c.mailSubject) q.push('subject=' + encodeURIComponent(c.mailSubject));
+    if (c.mailBody) q.push('body=' + encodeURIComponent(c.mailBody));
+    return 'mailto:' + c.email + (q.length ? '?' + q.join('&') : '');
+  }
   function youtubeLink() {
     var url = S.contact.youtube && S.contact.youtube.url;
     return url
@@ -326,7 +333,7 @@
           '<p class="f-line">&ldquo;' + esc(line) + '&rdquo;</p></div>' +
         '<div class="le" id="le">' +
           (L ? '<div class="le-main"><p class="le-cap">' + esc(L.caption) + '</p><div class="le-timer" id="le-timer" role="timer" aria-label="Countdown"></div></div>' : '') +
-          '<div class="le-social"><a href="' + esc(S.contact.linkedin.url) + '" target="_blank" rel="noopener" aria-label="Supriya Jana on LinkedIn" title="Supriya Jana on LinkedIn">' + icon('linkedin') + '</a>' + youtubeLink() + '<a href="mailto:' + esc(S.contact.email) + '" aria-label="Email ' + esc(S.contact.email) + '" title="' + esc(S.contact.email) + '">' + icon('mail') + '</a></div>' +
+          '<div class="le-social"><a href="' + esc(S.contact.linkedin.url) + '" target="_blank" rel="noopener" aria-label="Supriya Jana on LinkedIn" title="Supriya Jana on LinkedIn">' + icon('linkedin') + '</a>' + youtubeLink() + '<a href="' + esc(mailHref()) + '" aria-label="Email ' + esc(S.contact.email) + '" title="' + esc(S.contact.email) + '">' + icon('mail') + '</a></div>' +
         '</div>' +
       '</div>';
   }
