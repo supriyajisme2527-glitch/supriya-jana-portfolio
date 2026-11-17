@@ -28,6 +28,7 @@
     book: '<path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2V5zM4 19a2 2 0 0 1 2-2h13"/>',
     flask: '<path d="M9 3h6M10 3v6L4.8 18a2 2 0 0 0 1.7 3h11a2 2 0 0 0 1.7-3L14 9V3M7.5 14.5h9"/>',
     hospital: '<path d="M4 21V7a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14M2 21h20M12 10v6M9 13h6"/>',
+    laptop: '<rect x="4" y="5" width="16" height="11" rx="1.5"/><path d="M2 19h20"/>',
     bag: '<path d="M5 8h14l-1 12H6L5 8zM9 8V6a3 3 0 0 1 6 0v2"/>',
     leaf: '<path d="M5 19c0-8 5-14 15-14 0 10-6 15-14 15M5 19l8-8"/>',
     bolt: '<path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/>',

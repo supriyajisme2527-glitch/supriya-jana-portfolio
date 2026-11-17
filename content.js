@@ -651,6 +651,33 @@ window.SITE = {
         { img: "images/lazy-baker-3.webp", thumb: "images/lazy-baker-3-t.webp", title: "Rainy Days", caption: "Ad 2: rain outside, cookies inside" },
         { img: "images/lazy-baker-4.webp", thumb: "images/lazy-baker-4-t.webp", title: "The plan", caption: "Objective, audience, budget and flight from the IMC planning report" }
       ]
+    },
+    {
+      /* Her own business (Nov 2026): the "Little Eyes, Sharp Minds" puzzle-book series and its website.
+         Text is taken from the live site. The cover (images/little-eyes-cover.webp) is the hero section of her business website. */
+      id: "little-eyes-sharp-minds", short: "Little Eyes, Sharp Minds", icon: "book", art: "bubbles", featured: true, thumbRatio: "1835 / 779",
+      title: "Little Eyes, Sharp Minds: Screen-Free Observation Books",
+      cardTitle: "Little Eyes, Sharp Minds",
+      category: "My Business \u00B7 Founder",
+      year: "2026",
+      summary: "My own venture: a series of screen-free puzzle books that build observation skills in children aged 4 to 8, sold to parents and to schools through a levelled program.",
+      cta: "See the business",
+      description: [
+        "Little Eyes, Sharp Minds is a business I founded. It sells spot-the-difference puzzle books that help young children learn to look closely, as a screen-free alternative to reels and colouring books.",
+        "The website presents the series, the schools program and ordering through WhatsApp or Amazon."
+      ],
+      points: [
+        "Three books with 30 puzzles each (90 in total), in Easy, Medium and Hard levels.",
+        "Each book has an answer section, a note for parents and a cut-out jigsaw that becomes a \u201CSuper Observer\u201D certificate.",
+        "A levelled Observation Skills Program for Nursery to UKG classrooms, with customised covers and achievement badges.",
+        "Orders through WhatsApp for delivery in India, or on Amazon."
+      ],
+      findings: [],
+      tags: ["Founder", "Kids' Books", "D2C"],
+      allTags: ["Entrepreneurship", "Product design", "Website", "D2C sales", "School partnerships"],
+      link: "https://littleeyessharpminds.netlify.app",
+      linkLabel: "Visit the website",
+      image: "images/little-eyes-cover.webp"
     }
   ],
   /* The tabs above the project cards. `projects` lists project ids. A tab with no
@@ -658,7 +685,10 @@ window.SITE = {
   projectTabs: [
     { label: "Classroom Projects",      icon: "cap",       projects: ["nova-consumer-behaviour", "omnipulse-digital-marketing", "delivery-in-minutes", "pricing-simulation-universal"] },
     { label: "AI Projects",              icon: "monitor",   projects: ["pharmaos-app", "pharma-os", "pharma-crm", "diabetes-prediction-orange"] },
-    { label: "Internship Projects",     icon: "briefcase", projects: ["bluestone-dashboard"] }
+    { label: "Internship Projects",     icon: "briefcase", projects: ["bluestone-dashboard"] },
+    { label: "Business Projects",       icon: "bag",       projects: ["little-eyes-sharp-minds"] },
+    { label: "Freelancing Projects",    icon: "laptop",    projects: [],
+      soon: { title: "Freelancing projects coming soon", text: "Client work in market research, Meta ads, AI automation and data analysis will be added here." } }
   ],
 
   /* ---------------------------- EXPERIENCE ---------------------------- */
